@@ -1,0 +1,529 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Raleway, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.menu-bar :hover {
+    cursor: pointer;
+}
+
+.left {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu-bar i {
+    font-size: 2rem;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #1C1816;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    transition: all 1s;
+    z-index: 222;
+    padding-left: 2%;
+}
+
+.side-login {
+    background: #EA002A;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+ol {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.sidebar i {
+    background: #EA002A;
+    color: white;
+    padding: 3px;
+
+}
+
+.sidebar hr {
+    margin-top: 10%;
+    width: 100%;
+    background: gray;
+    height: 3px;
+    border: none;
+    border-radius: 1px;
+}
+
+.overlay {
+    background: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transform: translate(-100%);
+    transition: all 0.3s;
+
+}
+
+.delivery {
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+    gap: 0.6rem;
+    background: #1C1816;
+    padding: 0.1rem 0.9rem;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #EA002A;
+}
+
+.delivery :hover {
+    cursor: pointer;
+}
+
+.pickup {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 0.6rem;
+    background: #1C1816;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.7rem;
+    border-radius: 5px;
+}
+
+.pickup:hover {
+    cursor: pointer;
+}
+
+.right {
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+
+}
+
+.bucket :hover {
+    cursor: pointer;
+}
+
+.bucket {
+    position: relative;
+    color: black;
+}
+
+.quantity {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quantity:hover {
+    cursor: pointer;
+}
+
+.login {
+    background: #EA002A;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.front-page {
+    background-image: url('https://www.kfcpakistan.com/images/31901040-378f-11ee-a581-4b8928a7b83b-995x356-family-festival-3_desktop_image-2023-08-10150424.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.reorder {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 0.5rem;
+    background: #EA002A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.reorder :hover {
+    cursor: pointer;
+}
+
+.explore {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+hr {
+    width: 6%;
+    background: #EA002A;
+    height: 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+.explore-menu {
+
+    text-transform: uppercase;
+}
+
+.items {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    transition: all 5s;
+}
+.items :hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+}
+
+.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1C1816;
+    border-radius: 50% 50% 5px 50%;
+    gap: 0.3rem;
+    position: relative;
+}
+
+.circle {
+
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    right: 10px;
+    background-color: black;
+    bottom: 10px;
+}
+
+
+
+.best-seller {
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+
+}
+
+.my-items {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.my-items :hover {
+    cursor: pointer;
+    /* transform: scaleY(1.5); */
+}
+.rectangle {
+    background-color: #1C1816;
+    position: relative;
+}
+
+.price {
+    clip-path: polygon(100% 36%, 100% 50%, 100% 65%, 0 65%, 28% 51%, 0 36%);
+    background-color: #EA002A;
+    padding: 2rem;
+    width: 20%;
+    text-align: right;
+    margin-left: auto;
+    padding-right: 0;
+}
+
+.price h5 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.deals {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.d-rectangle {
+    background-color: #1C1816;
+    position: relative;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.ADD {
+    align-self: center;
+    background: #EA002A;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.d-items {
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.seller-image {
+    display: flex;
+    margin-top: 5%;
+    gap: 1.5rem;
+    justify-content: center;
+    border-radius: 1px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.img {
+    display: flex;
+    gap: 2rem;
+    padding: 25px;
+    justify-content: space-between;
+    margin: auto;
+
+
+}
+
+.deals {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+
+}
+
+.deals hr {
+    width: 10%;
+    background-color: #EA002A;
+    height: 2px;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.deals h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.d-card img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.d-card {
+    padding: 0rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #1C1816;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+.d-card img:hover {
+    transform: translateY(-20px);
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.box {
+    width: 20px;
+    height: 25px;
+    background: #EA002A;
+
+}
+
+.deals button {
+    width: 50%;
+    margin: auto;
+    margin-bottom: -30px;
+    color: white;
+    background: #EA002A;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+.banner {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.top,
+.bottom {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:hover{
+    cursor: pointer;
+}
+
+.explore2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1C1816;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.explore2 button {
+    background: #EA002A;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    margin: 1rem;
+    width: 200px;
+    font-size: 20px;
+}
+
+.footer {
+    background: #1C1816;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social i {
+    color: black;
+    background: white;
+    align-self: center;
+    border-radius: 50%;
+    padding: 0.5rem;
+
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.list ul {
+    color: white;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.list ul li {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.last ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.last h6 {
+    font-size: 1rem;
+}
+
+.last h1 {
+    font-size: 20px;
+    color: #EA002A;
+}
